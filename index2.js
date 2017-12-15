@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  var artists = ["John Lee Hooker", "Lightnin' Hopkins", "Keller Williams", "Yonder Mountain String Band", "My Morning Jacket", "Bill Monroe", "Sonny Osborne", "Jimmie Skinner", "Kurt Vile", "Robert Randolph", "Papa String Band", "Jake Shimabukuro", "Widespread Panic", "Grateful Dead", "Mississippi John Hurt", "KEXP", "Steep Canyon Rangers", "Acoustic Junction", "Jerry Garcia", "Mance Lipscomb", "Sonny Boy Williamson"]
+  var artists = ["John Lee Hooker", "Lightnin' Hopkins", "Keller Williams", "Yonder Mountain String Band", "My Morning Jacket", "Bill Monroe", "Sonny Osborne", "Jimmie Skinner", "Kurt Vile", "Robert Randolph", "Papa String Band", "Jake Shimabukuro", "Allman Brothers", "Grateful Dead", "Mississippi John Hurt", "KEXP", "Steep Canyon Rangers", "Acoustic Junction", "Jerry Garcia", "Mance Lipscomb", "Sonny Boy Williamson"]
   var options = artists.map(function(artist){
     return `<option value=${artist.split(' ').join('+')}>${artist}</option>`
   })
@@ -113,6 +113,9 @@ $(document).ready(function(){
         }
         if (selectedSong.album){
           $('.nowPlaying').append(`<h2>${selectedSong.album}</h2>`)
+        }
+        if (!selectedSong.artist && !selectedSong.song && !selectedSong.album){
+          $('.nowPlaying').append(`<h2>NO INFO AVAILABLE</h2>`)
         }
       })
     })
