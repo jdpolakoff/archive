@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  var artists = ["John Lee Hooker", "Lightnin' Hopkins", "Keller Williams", "Yonder Mountain String Band", "My Morning Jacket", "Bill Monroe", "Sonny Osborne", "Jimmie Skinner", "Kurt Vile", "Robert Randolph", "Papa String Band", "Jake Shimabukuro", "Allman Brothers", "Grateful Dead", "Mississippi John Hurt", "KEXP", "Steep Canyon Rangers", "Acoustic Junction", "Jerry Garcia", "Mance Lipscomb", "Sonny Boy Williamson"]
+  var artists = ["John Lee Hooker", "Lightnin' Hopkins", "Keller Williams", "Yonder Mountain String Band", "Jack Johnson", "Blues Traveler", "My Morning Jacket", "Bill Monroe", "Sonny Osborne", "Jimmie Skinner", "Kurt Vile", "Robert Randolph", "Papa String Band", "Jake Shimabukuro", "Allman Brothers", "Grateful Dead", "Mississippi John Hurt", "KEXP", "Steep Canyon Rangers", "Acoustic Junction", "Jerry Garcia", "Mance Lipscomb", "Sonny Boy Williamson"]
   var options = artists.map(function(artist){
     return `<option value=${artist.split(' ').join('+')}>${artist}</option>`
   })
@@ -105,6 +105,7 @@ $(document).ready(function(){
         var selectedSong = metadata[Math.floor(Math.random() * metadata.length)]
         console.log(selectedSong)
         $('audio').attr('src', selectedSong.url)
+        $('.nowPlaying').append(`<h2>Now playing: ${$('.dropDown').val().split('+').join(' ')} radio</h2>`)
         if (selectedSong.artist) {
           $('.nowPlaying').append(`<h2>${selectedSong.artist}</h2>`)
         }
@@ -115,7 +116,7 @@ $(document).ready(function(){
           $('.nowPlaying').append(`<h2>${selectedSong.album}</h2>`)
         }
         if (!selectedSong.artist && !selectedSong.song && !selectedSong.album){
-          $('.nowPlaying').append(`<h2>NO INFO AVAILABLE</h2>`)
+          $('.nowPlaying').append(`<h2>NO SONG INFO AVAILABLE</h2>`)
         }
       })
     })
