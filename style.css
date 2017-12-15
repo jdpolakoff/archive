@@ -96,3 +96,9 @@ option {
   font-family: 'PizzaSlime';
   color: #2bff14
 }
+
+@media only screen and (max-width: 800px)  {
+  .content {
+    width: 100%
+  }
+}
