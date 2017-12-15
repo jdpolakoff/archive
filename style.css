@@ -1,0 +1,98 @@
+
+@font-face {
+  font-family: 'PizzaSlime';
+  src: url('./SkidooMedium_RH.ttf')
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./shack.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+    /*background-attachment: fixed;*/
+  font-family: 'PizzaSlime';
+  color: #2bff14
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  flex: 1
+}
+
+audio {
+  width: 100%;
+  height: 50px;
+}
+
+.btns {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.header {
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center
+}
+
+
+#next {
+  font-size: 38px
+}
+
+.btns h1:hover {
+  cursor: pointer
+}
+
+.content {
+  position: absolute;
+  width: 40%;
+  left: 0;
+  right: 0;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column
+}
+
+.nowPlaying {
+  margin-top: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px
+}
+
+.dropDown {
+  width: 60%;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'PizzaSlime';
+  color: #2bff14;
+  background-color: black
+}
+
+option {
+  font-family: 'PizzaSlime';
+  color: #2bff14
+}

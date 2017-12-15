@@ -5,18 +5,27 @@
     <title></title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="./index2.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <meta name="viewport" content="width=590">
   </head>
   <body>
+    <div class="header">
+      <h1>Front Porch Radio</h1>
+    </div>
+    <main>
+    <div class="content">
     <select class="dropDown">
-
     </select>
-    <select class="genre">
-      
-    </select>
-    <audio controls>
-
-      <source src="">
-
-    </audio
+    <div class="nowPlaying">
+    </div>
+    </div>
+  <div class="btns">
+    <h1 id="next">NEXT SONG</h1>
+  </div>
+  </main>
+    <audio controls autoplay="autoplay">
+      <source src="" onended="getSong()"></source>
+    </audio>
   </body>
 </html>
