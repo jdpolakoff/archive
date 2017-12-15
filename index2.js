@@ -28,6 +28,11 @@ $(document).ready(function(){
     getSong()
   })
 
+  $('audio').on('ended', function(){
+    $('.nowPlaying').empty()
+    getSong()
+  })
+
   function getSong(){
     console.log('hi')
     var artist = $('.dropDown').val()
