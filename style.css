@@ -32,7 +32,7 @@ audio {
   height: 50px;
   margin-top: 2%;
   margin-bottom; 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0
