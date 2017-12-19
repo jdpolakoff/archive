@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  var artists = ["John Lee Hooker", "Lightnin' Hopkins", "Keller Williams", "Yonder Mountain String Band", "Bill Monroe", "Sonny Osborne", "Jimmie Skinner", "Kurt Vile", "Robert Randolph", "Papa String Band", "Jake Shimabukuro", "Grateful Dead", "Mississippi John Hurt", "Jerry Garcia", "Mance Lipscomb", "Sonny Boy Williamson"]
+  var artists = ["Keller Williams", "Yonder Mountain String Band", "Robert Randolph", "Grateful Dead"]
   var options = artists.map(function(artist){
     return `<option value=${artist.split(' ').join('+')}>${artist}</option>`
   })
