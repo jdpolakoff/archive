@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  var artists = ["Keller Williams", "Yonder Mountain String Band", "Robert Randolph", "Grateful Dead", "David Grisman", "Little Feat", "Andrew Bird", "Citizen Cope", "White Denim", "Bob Weir", "Justin Townes Earle"]
+  var artists = ["Keller Williams", "Yonder Mountain String Band", "Robert Randolph", "Grateful Dead", "David Grisman", "Bob Weir", "Justin Townes Earle"]
   var options = artists.map(function(artist){
     return `<option value=${artist.split(' ').join('+')}>${artist}</option>`
   })
