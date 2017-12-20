@@ -48,6 +48,8 @@ $(document).ready(function(){
     }
   })
 
+})
+
   function getSong(){
     console.log('hi')
     var artist = $('.dropDown').val()
@@ -136,7 +138,6 @@ $(document).ready(function(){
       })
     })
   }
-})
 
   function getFesty(){
     console.log('hi')
