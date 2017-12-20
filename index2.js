@@ -20,11 +20,13 @@ $(document).ready(function(){
 
   $('.dropDown').change(function(){
     $('.nowPlaying').empty()
+    $('.dropDown').val('Choose A Festival')
     getSong()
   })
 
   $('.genre').change(function(){
     $('.nowPlaying').empty()
+    $('.dropDown').val('Choose An Artist')
     getFesty()
   })
 
