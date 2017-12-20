@@ -130,4 +130,7 @@ option {
   .header {
     font-size: 28px;
   }
+  .nowPlaying {
+    margin-top: none;
+  }
 }
