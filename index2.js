@@ -8,7 +8,7 @@ $(document).ready(function(){
   for (z = 0; z < options.length; z++) {
     $('.dropDown').append(options[z])
   }
-  var genres = ["Bonnaroo", "Jazz Fest", "Outside Lands", "Newport Folk Festival", "Telluride Bluegrass Festival", "MerleFest", "Hardly Strictly Bluegrass", "Durango", "Juke Joint Festival", "Waterfront Blues Festival"]
+  var genres = ["Outside Lands", "Newport Folk Festival", "Telluride Bluegrass Festival", "Bonnaroo", "Jazz Fest", "MerleFest", "Hardly Strictly Bluegrass", "Durango", "Juke Joint Festival", "Waterfront Blues Festival"]
   var options2 = genres.map(function(genre){
     return `<option value=${genre.split(' ').join('+')}>${genre}</option>`
   })
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $('.dropDown').change(function(){
     $('.nowPlaying').empty()
-    $('.dropDown').val('Choose A Festival')
+    $('.genre').val('Choose A Festival')
     getSong()
   })
 
