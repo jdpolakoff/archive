@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  var artists = ["Keller Williams", "Yonder Mountain String Band", "Robert Randolph", "Grateful Dead", "David Grisman", "Bob Weir", "Justin Townes Earle", "JJ Grey"]
+  var artists = ["Keller Williams", "Yonder Mountain String Band", "Robert Randolph", "Grateful Dead", "David Grisman", "Bob Weir", "Justin Townes Earle", "JJ Grey", "Alabama Shakes"]
   var options = artists.map(function(artist){
     return `<option value=${artist.split(' ').join('+')}>${artist}</option>`
   })
@@ -8,7 +8,7 @@ $(document).ready(function(){
   for (z = 0; z < options.length; z++) {
     $('.dropDown').append(options[z])
   }
-  var genres = ["Outside Lands", "Newport Folk Festival", "Telluride Bluegrass Festival", "Bonnaroo", "Jazz Fest", "MerleFest", "Hardly Strictly Bluegrass", "Waterfront Blues Festival"]
+  var genres = ["Newport Folk Festival", "Telluride Bluegrass Festival", "Bonnaroo", "Jazz Fest", "Outside Lands", "MerleFest", "Hardly Strictly Bluegrass", "Waterfront Blues Festival"]
   var options2 = genres.map(function(genre){
     return `<option value=${genre.split(' ').join('+')}>${genre}</option>`
   })
